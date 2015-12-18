@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="myPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.v5.HomeStageController">
+   <children>
+      <Button fx:id="btnNewGame" onAction="#gotoMainStage"  layoutX="828.0" layoutY="383.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="200.0" text="New Game" />
+      <Button fx:id="btnQuit" cancelButton = "true" onAction="#quitStage"  alignment="CENTER" layoutX="828.0" layoutY="492.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="200.0" text="Quit" />
+   </children>
+</AnchorPane>

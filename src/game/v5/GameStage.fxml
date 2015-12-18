@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.v5.GameStageController">
+   <children>
+      <SplitPane layoutX="1051.0" layoutY="95.0" orientation="VERTICAL" prefHeight="1080.0" prefWidth="1920.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <SplitPane dividerPositions="0.5631524008350731" layoutX="538.0" layoutY="38.0" prefHeight="691.0" prefWidth="1918.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="689.0" prefWidth="927.0">
+                           <children>
+                              <Label layoutX="438.0" layoutY="293.0" text="Turn Action" />
+                              <Button fx:id="btnAttack" layoutX="529.0" layoutY="607.0" mnemonicParsing="false" prefWidth="200.0" text="Attack" />
+                              <Label layoutX="33.0" layoutY="617.0" text="Current Action" />
+                              <Button fx:id="btnGrow" layoutX="529.0" layoutY="829.0" mnemonicParsing="false" prefWidth="200.0" text="Grow" />
+                              <Button fx:id="btnDefend" layoutX="529.0" layoutY="713.0" mnemonicParsing="false" prefWidth="200.0" text="Defend" />
+                              <Label layoutX="27.0" layoutY="472.0" prefHeight="45.0" prefWidth="1177.0" text="Select a player, plant type , and resource and press Attack or choose to defend or grow" />
+                              <Button fx:id="btnWater" layoutX="47.0" layoutY="371.0" mnemonicParsing="false" prefWidth="200.0" text="Water" />
+                              <Button fx:id="btnSoil" layoutX="416.0" layoutY="371.0" mnemonicParsing="false" prefWidth="200.0" text="Soil" />
+                              <Button fx:id="btnScent" layoutX="780.0" layoutY="370.0" mnemonicParsing="false" prefWidth="200.0" text="Scent" />
+                              <Button fx:id="btnBackGameStage" layoutX="22.0" layoutY="15.0" mnemonicParsing="false" onAction="#gotoHomeStage" text="Back" />
+                              <Button fx:id="btnPlay" layoutX="926.0" layoutY="151.0" mnemonicParsing="false" text="Play" />
+                              <TextField fx:id="tfPlayerName" layoutX="185.0" layoutY="151.0" prefHeight="65.0" prefWidth="146.0" />
+                              <TextField fx:id="tfPlantName" layoutX="498.0" layoutY="151.0" prefHeight="65.0" prefWidth="146.0" />
+                              <Label layoutX="339.0" layoutY="161.0" text="Plant Name" />
+                              <Label layoutX="16.0" layoutY="161.0" text="Player Name" />
+                              <Label layoutX="713.0" layoutY="105.0" text="Plant Type" />
+                              <TextField fx:id="tfPlantType" layoutX="707.0" layoutY="151.0" prefHeight="65.0" prefWidth="146.0" />
+                              <TextField fx:id="cbPlayer" layoutX="266.0" layoutY="607.0" prefHeight="65.0" prefWidth="146.0" />
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="230.0" prefWidth="290.0">
+                           <children>
+                              <SplitPane dividerPositions="0.9925512104283054" layoutX="382.0" layoutY="201.0" orientation="VERTICAL" prefHeight="1076.0" prefWidth="829.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <items>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="258.0" prefWidth="158.0">
+                                       <children>
+                                          <TextArea fx:id="taServer" layoutX="8.0" layoutY="-14.0" prefHeight="529.0" prefWidth="827.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="-8.0" AnchorPane.topAnchor="-14.0" />
+                                       </children>
+                                    </AnchorPane>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+                                </items>
+                              </SplitPane>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
